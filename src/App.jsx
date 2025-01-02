@@ -11,23 +11,14 @@ const App = () => {
   return (
     <Router>
       <Box sx={{ display: "flex" }}>
-      <CssBaseline />
-      <Header />
-      <Menu />
-
-      {/* Nội dung chính */}
-      <Box
-        component="main"
-        sx={{
-          flexGrow: 1,
-          p: 3,
-          width: `calc(100% - ${drawerWidth}px)`,
-          marginTop: "64px",
-        }}
-      >
-         <RoutesComponent />
+        <CssBaseline />
+        <Header />
+        <Menu />
+        <Box component="main" 
+            sx={{ flexGrow: 1, p: 3, width: `calc(100% - ${drawerWidth}px)`, marginTop: "64px" }}>
+          <RoutesComponent />
+        </Box>
       </Box>
-    </Box>
     </Router>   
   );
 };

@@ -1,0 +1,48 @@
+:root {
+    --purple-color: #3c3eb9;
+    --purple-black-color: #04054c;
+    --menu-background: #121621;
+    --text-menu: #b3b9c6;
+}
+
+.appbar-header {
+    position: fixed !important;
+    background-color: var(--purple-black-color) !important;
+}
+
+.toolbar-header {
+    display: flex;
+    justify-content: space-between;   
+}
+
+.logo-header {
+    display: flex;
+    gap: 3vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.ico-logo-header {
+    width: 5vh !important;
+    height: 5vh !important;
+}
+
+.box-menu {
+    background-color: var(--menu-background);
+    overflow: auto;
+    height: 100vh;  
+}
+
+.ico-menu-item {
+    color: var(--text-menu) !important;    
+}
+
+.text-menu-item {
+    color: var(--text-menu) !important;
+    font-weight: bold !important;
+}
+
+.item-menu-click-active {
+    background-color: var(--purple-color);
+    transition: background-color 0.3s ease, border-left 0.3s ease;
+}
