@@ -46,3 +46,7 @@
     background-color: var(--purple-color);
     transition: background-color 0.3s ease, border-left 0.3s ease;
 }
+.item-menu-click-active:hover {
+    background-color: var(--purple-color) !important;
+    transition: background-color 0.3s ease, border-left 0.3s ease;
+}

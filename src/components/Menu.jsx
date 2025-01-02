@@ -36,7 +36,11 @@ function Menu() {
       }}
     >
       <Toolbar />
-        <Box className='box-menu'>
+        <Box className='box-menu' sx={{
+        '& .MuiListItem-root:hover': {
+          backgroundColor: 'transparent',
+        }
+      }}>
           <List>
             { constMenu.map((menu, key) => (              
               <ListItem
