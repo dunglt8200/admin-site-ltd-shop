@@ -50,3 +50,8 @@
     background-color: var(--purple-color) !important;
     transition: background-color 0.3s ease, border-left 0.3s ease;
 }
+
+.box-main-category {
+    height: 50vh;
+    margin: 10vh;
+}

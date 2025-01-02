@@ -23,7 +23,6 @@ function Menu() {
   const [menuActive, setMenuActive] = useState(null);
   const handleMenuClick = (index) => {
     setMenuActive(index);
-    console.log(`Menu active: ${index}`);
   };
 
   return (

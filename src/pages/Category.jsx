@@ -1,10 +1,11 @@
 import React from "react";
+import { Box, Typography } from "@mui/material";
 
 function Category () {
   return (
-    <>
-    Categoty page
-    </>
+    <Box className='box-main-category'>
+      <Typography variant="h5">Danh mục sản phẩm</Typography>
+    </Box>
   );
 };
 
