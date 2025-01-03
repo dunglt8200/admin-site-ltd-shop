@@ -5,7 +5,7 @@ import Menu from "../src/components/Menu";
 import RoutesComponent from "../src/routers/RoutesComponent";
 import { BrowserRouter as Router } from "react-router-dom";
 
-const drawerWidth = 240;
+const drawerWidth = 300;
 
 const App = () => {
   return (
@@ -14,8 +14,7 @@ const App = () => {
         <CssBaseline />
         <Header />
         <Menu />
-        <Box component="main" 
-            sx={{ flexGrow: 1, p: 3, width: `calc(100% - ${drawerWidth}px)`, marginTop: "64px" }}>
+        <Box component="main" className="box-main-component">
           <RoutesComponent />
         </Box>
       </Box>

@@ -1,8 +1,11 @@
+@import url('../assets//styleCategoty.css');
+
 :root {
     --purple-color: #3c3eb9;
     --purple-black-color: #04054c;
     --menu-background: #121621;
     --text-menu: #b3b9c6;
+    --background-component: #f4f6f8;
 }
 
 .appbar-header {
@@ -64,12 +67,23 @@
     background-color: var(--purple-color);
     transition: background-color 0.3s ease, border-left 0.3s ease;
 }
+
 .item-menu-click-active:hover {
     background-color: var(--purple-color) !important;
     transition: background-color 0.3s ease, border-left 0.3s ease;
 }
 
-.box-main-category {
-    height: 50vh;
-    margin: 10vh;
+.box-main-component {
+    flex-grow: 1;
+    padding: 3;
+    width: calc(100% - 300px);
+    margin-top: 7vh;
+    background-color: var(--background-component) !important;
+    height: 95vh;
+}
+
+.formControl-input {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
 }

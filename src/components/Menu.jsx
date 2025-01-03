@@ -39,13 +39,13 @@ function Menu() {
           <List>
             { constMenu.map((menu, key) => (              
               <ListItem
-              key={key}
-              button
-              component={Link}
-              to={menu.Path}
-              onClick={() => handleMenuClick(key)}
-              className={`item-menu-click${menuActive === key ? '-active': ''}`}
-            >
+                key={key}
+                button
+                component={Link}
+                to={menu.Path}
+                onClick={() => handleMenuClick(key)}
+                className={`item-menu-click${menuActive === key ? '-active': ''}`}
+              >
                 <ListItemIcon className='ico-menu-item'>{menu.Ico}</ListItemIcon>
                 <ListItemText className='text-menu-item' primary={menu.Name} />
               </ListItem>
