@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Drawer, List, ListItem, ListItemText, Toolbar, Box, ListItemIcon } from "@mui/material";
+import { Drawer, List, ListItem, ListItemText, Typography, Box, ListItemIcon, CssBaseline } from "@mui/material";
 import { Link } from "react-router-dom";
 import HouseIcon from '@mui/icons-material/House';
 import CategoryIcon from '@mui/icons-material/Category';
+import DiamondIcon from '@mui/icons-material/Diamond';
 
-const drawerWidth = 240;
+const drawerWidth = 300;
 const constMenu = [
   {
     Name: "Trang chủ",
@@ -26,20 +27,15 @@ function Menu() {
   };
 
   return (
-    <Drawer
-      variant="permanent"
-      sx={{
-        width: drawerWidth,
-        flexShrink: 0,
+    <Drawer variant="permanent" sx={{ width: drawerWidth, flexShrink: 0,
         [`& .MuiDrawer-paper`]: { width: drawerWidth, boxSizing: "border-box" },
-      }}
-    >
-      <Toolbar />
-        <Box className='box-menu' sx={{
-        '& .MuiListItem-root:hover': {
-          backgroundColor: 'transparent',
-        }
       }}>
+        <CssBaseline />
+        <Box className='box-menu' sx={{ '& .MuiListItem-root:hover': { backgroundColor: 'transparent' } }}>
+          <Box className='logo-menu'>
+            <DiamondIcon className='ico-logo-menu'/>
+            <Typography variant="h6" noWrap component="div" className="text-logo-menu">LTD SHOP ADMIN</Typography>
+          </Box>
           <List>
             { constMenu.map((menu, key) => (              
               <ListItem

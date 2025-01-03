@@ -11,20 +11,38 @@
 }
 
 .toolbar-header {
-    display: flex;
-    justify-content: space-between;   
+    padding-left: 330px !important;
 }
 
-.logo-header {
+.box-header {
     display: flex;
-    gap: 3vh;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-menu {
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    background-color: var(--purple-black-color);
+    border-bottom: 1px solid var(--text-menu);
+    height: 20vh;
 }
 
-.ico-logo-header {
-    width: 5vh !important;
-    height: 5vh !important;
+.ico-logo-menu {
+    width: 10vh !important;
+    height: 10vh !important;
+    color: var(--text-menu);
+}
+
+.text-logo-menu {
+    color: var(--text-menu);
+    background-color: var(--menu-background);
+    width: 25vh;
+    display: flex;
+    justify-content: center;
+    border-radius: 10vh;
 }
 
 .box-menu {
